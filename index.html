@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>English Language Practice Exam 4: 20 MCQs (2022 paper)</title>
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#1d2433;--mute:#5d6577;--line:#d9d6cc;--acc:#1f4e79;--accbg:#e4edf6;--ok:#17703a;--okbg:#e2f3e8;--bad:#a82424;--badbg:#fbe6e6;--warn:#8a5a00;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181f;--card:#1c222c;--ink:#e8ebf1;--mute:#9aa3b5;--line:#2f3744;--acc:#7fb2e5;--accbg:#22334a;--ok:#5fd18a;--okbg:#17321f;--bad:#ff8a8a;--badbg:#3a1c1c;--warn:#e3b04b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14181f;--card:#1c222c;--ink:#e8ebf1;--mute:#9aa3b5;--line:#2f3744;--acc:#7fb2e5;--accbg:#22334a;--ok:#5fd18a;--okbg:#17321f;--bad:#ff8a8a;--badbg:#3a1c1c;--warn:#e3b04b;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Georgia,"Times New Roman",serif}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 80px}
+header{padding:28px 0 12px}
+h1{font-size:1.6rem;line-height:1.2;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 14px;font-family:system-ui,sans-serif;font-size:.92rem}
+.rules{background:var(--accbg);border-left:4px solid var(--acc);padding:10px 14px;border-radius:4px;font-family:system-ui,sans-serif;font-size:.9rem}
+.rules select{font:inherit;padding:2px 4px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:4px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);font-family:system-ui,sans-serif;font-size:.88rem;display:flex;gap:12px;align-items:center}
+.track{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.fill{height:100%;width:0;background:var(--acc);transition:width .2s}
+.q{background:var(--card);border:1px solid var(--line);border-radius:8px;margin:16px 0;padding:16px}
+.q h2{font-size:1rem;margin:0 0 10px;font-weight:600}
+.n{font-family:system-ui,sans-serif;color:var(--acc);font-weight:700;margin-right:6px}
+.ctx{font-size:.9rem;background:var(--bg);border:1px solid var(--line);padding:8px 12px;border-radius:6px;margin:0 0 10px}
+.ctx ol{margin:4px 0 0;padding-left:20px}
+.opt{display:flex;gap:10px;width:100%;text-align:left;font:inherit;color:inherit;background:transparent;border:1px solid var(--line);border-radius:6px;padding:9px 12px;margin:6px 0;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--acc)}
+.opt:focus-visible,button.main:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.opt b{font-family:system-ui,sans-serif;min-width:1.2em}
+.opt.sel{background:var(--accbg);border-color:var(--acc)}
+.opt.ok{background:var(--okbg);border-color:var(--ok)}
+.opt.bad{background:var(--badbg);border-color:var(--bad)}
+.opt:disabled{cursor:default}
+.exp{display:none;margin-top:10px;font-size:.9rem;font-family:system-ui,sans-serif;padding:8px 12px;border-radius:6px;background:var(--bg);border:1px solid var(--line)}
+.review .exp{display:block}
+.tag{font-weight:700}
+.tag.ok{color:var(--ok)}.tag.bad{color:var(--bad)}.tag.blank{color:var(--warn)}
+button.main{font:600 1rem system-ui,sans-serif;background:var(--acc);color:var(--bg);border:0;border-radius:6px;padding:12px 22px;cursor:pointer;margin:6px 8px 0 0}
+button.alt{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+#res{display:none;background:var(--card);border:2px solid var(--acc);border-radius:8px;padding:20px;margin:18px 0;font-family:system-ui,sans-serif}
+#res .big{font-size:2.6rem;font-weight:700;line-height:1.1;font-family:Georgia,serif}
+#res table{border-collapse:collapse;margin:10px 0;font-size:.92rem}
+#res td{padding:3px 14px 3px 0}
+.note{color:var(--mute);font-size:.82rem;font-family:system-ui,sans-serif}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>English language practice exam 4</h1>
+<p class="sub">20 new questions from the November 2022 paper, in random order, including a few trickier items. Score out of 20.</p>
+<div class="rules"><b>Marking (Canadian system):</b> correct answer +1 · blank 0 · wrong answer −<select id="pen"><option value="0">0 (no penalty)</option><option value="0.25">0.25</option><option value="0.33" selected>0.33</option><option value="0.5">0.5</option><option value="1">1</option></select> point. Click a chosen answer again to clear it and leave the question blank. The final grade cannot go below 0.</div>
+</header>
+<div class="bar"><span id="cnt">0 / 20 answered</span><div class="track"><div class="fill" id="fill"></div></div></div>
+<div id="qs"></div>
+<div id="res"></div>
+<div id="act"><button class="main" id="sub">Submit exam</button></div>
+<p class="note">New questions, none repeated from exams 2 and 3, including trickier or more debatable items (marked Tricky item in the review). The real 2022 paper does not mention a penalty for wrong answers, so you can set it to 0 to train for that. The paper has no printed answer key, so the key is mine, and each explanation names the original question number.</p>
+</div>
+<script>
+const Q=[
+["Which of the following is the best way to combine the two sentences? \"He was really a good student. He didn't pass the exam.\"",["In spite of he was really a good student, he didn't pass the exam.","He was really a good student, although he didn't pass the exam.","Despite he was really a good student, he didn't pass the exam.","He was really a good student, and yet he didn't pass the exam."],3,"Original Q82 · Tricky item. A and C are ungrammatical (in spite of / despite need a noun or -ing, not a clause). B puts although on the unexpected fact, which reverses the logic. D keeps the contrast in the right direction."],
+["Choose the correct option to complete the sentence. We will find a hotel ........ we arrive in London.",["until","while","as soon as","as long as"],2,"Original Q32 · Time clauses. As soon as = immediately when. Until and while do not fit the meaning, and as long as expresses a condition."],
+["Fill in the blank with the right word. This beautiful sculpture is a landmark of our city. It was ............... in 1936 by a famous artist.",["built","raised","constructed","created"],3,"Original Q59 · Tricky item (word choice). Built and constructed are for buildings and structures. A work of art by an artist is created."],
+["Choose the correct option. A: \"Would you rather take coffee or tea?\" B: \"..........\"",["I'd rather not take either.","I'd rather not to take either.","I'd rather not take neither.","I'd rather not to take neither."],0,"Original Q79 · Would rather. Would rather + bare infinitive (no to), and a negative verb takes either, not neither (no double negative)."],
+["This sentence \"Stay awake until your mom comes back.\" is a",["simple sentence","compound sentence","complex sentence","compound-complex sentence"],2,"Original Q34 · Sentence types. One main clause (Stay awake) + one subordinate clause (until your mom comes back) = complex sentence."],
+["Choose the word that has almost the same meaning as the one in bold in the following sentence: A good teacher should have several qualities; one of them is being resourceful in classroom situations.",["Active","Creative","Smart","Independent"],1,"Original Q72 · Tricky item. Resourceful = good at finding clever ways to solve problems, which is closest to creative."],
+["Fill in the blank with the correct word. Student: \"............ hard I try, I can't get higher grades.\" Teacher: \"You've improved a lot. Just keep up the hard work.\"",["Though","Whereas","However","Considering"],2,"Original Q96 · Grammar. However + adjective/adverb + subject + verb = no matter how: However hard I try."],
+["Which of the following sentences is CORRECTLY punctuated?",["Leila has gone to school; her sister has gone to play tennis.","Leila has gone to school, Her sister has gone to play tennis.","Leila has gone to school: her sister has gone to play tennis.","Leila has gone to school, her sister has gone to play tennis."],0,"Original Q94 · Punctuation. Two related independent clauses can be joined by a semicolon. B and D are comma splices, and a colon (C) introduces an explanation or list."],
+["Choose the correct option to complete the sentence. We reduced the prices by 30%; the other companies followed ............",["like we did.","hand in hand.","altogether.","suit."],3,"Original Q51 · Idioms. To follow suit = to do the same thing as someone else has just done."],
+["Choose the correct sentence.",["My English teacher, for whom I'm doing a project, is now having a meeting with students' parents in the library.","My English teacher, that I'm doing a project for, is now having a meeting with students' parents in the library.","My English teacher whom I'm doing a project is now having a meeting with students' parents in the library.","My English teacher, for who I'm doing a project, is now having a meeting with students' parents in the library."],0,"Original Q22 · Relative clauses. After a preposition (for) we use whom, and that is not used in a non-defining clause. C lacks the preposition, and D uses who after a preposition."],
+["Choose the right word to fill in the gap in the following sentence. The minister expressed her ......... concern about the rate of divorce in the country.",["interesting","deep","shocking","scared"],1,"Original Q55 · Collocations. We say deep concern. Concern is not interesting, shocking or scared."],
+["Choose the correct option. A: \"I do not watch American films.\" B: \"..................\"",["Neither don't I.","Either do I.","Neither do I.","I not either."],2,"Original Q75 · Agreement. Neither + auxiliary + subject agrees with a negative statement: Neither do I."],
+["Choose the correct concluding sentence for the paragraph below.",["All in all, that is why everyone loves history.","In brief, we must study people, places, and events.","In summary, these are examples of moments in history.","In conclusion, there are many reasons why people should study history."],3,"Original Q99 · Writing. A concluding sentence restates the main idea of the paragraph (the importance of studying history) without adding new claims.",
+"<b>Paragraph:</b> It is important to study history. History repeats itself, so learning about the past can help us make better decisions in the present. Also, knowing about important historical leaders and events can help us understand cultures, people, and politics in today's world. Finally, learning about unusual people, places, and events in history is fascinating!"],
+["Choose the right meaning of the underlined expression. Alissa is \"riding the high horse\" because of her father's success as a businessman.",["She is arrogant","She is abnormal","She indulges in dreams","She is egocentric"],0,"Original Q48 · Idioms. To ride the high horse = to behave in a haughty, arrogant way."],
+["The dependent clause in the following sentence \"We went to the movies after we finished the game.\" is",["We went to the movies","we finished the game","after we finished the game","We went to the movies after"],2,"Original Q78 · Syntax. The dependent (subordinate) clause includes its conjunction: after we finished the game."],
+["Choose the right option to complete this sentence appropriately. I don't think much of him now ...... I have heard that he didn't keep to his promise.",["whom","which","what","that"],3,"Original Q71 · Conjunctions. Now that = because now, since: now that I have heard..."],
+["Choose the right option to fill in the blank. The use of ............ plants to treat such diseases is highly risky.",["medical","medicinal","medicalized","medecine"],1,"Original Q80 · Word formation. Medicinal = used as medicine (medicinal plants). Medical relates to the practice of medicine, and medecine is misspelled."],
+["Choose the correct answer to the following question. \"Have you ever been to Madrid?\"",["Yes, I have been there last summer.","No, I was ever there.","Yes, I have been there a couple of times.","Yes, I had been there with my wife."],2,"Original Q43 · Tenses and answers. The present perfect does not go with a finished time (last summer), and ever is not used in a positive past answer. C is correct."],
+["Fill in the blank with the correct word. Do not open this document before you ......... a virus scan.",["introduce","analyze","carry out","screen out"],2,"Original Q56 · Collocations. We carry out a scan, a test or a check."],
+["Choose the right connector. In this neighbourhood you may have access to many facilities. ..........., you may get sick of the noise.",["Consequently","On the other hand","Otherwise","Furthermore"],1,"Original Q84 · Connectors. The second sentence presents a drawback that contrasts with the advantage in the first, so On the other hand."]
+];
+const L="ABCDE",ans=Array(Q.length).fill(-1);let done=false;
+const $=id=>document.getElementById(id);
+$("qs").innerHTML=Q.map((q,i)=>`<section class="q" id="q${i}"><h2><span class="n">Q${i+1}</span>${q[0]}</h2>${q[4]?`<div class="ctx">${q[4]}</div>`:""}${q[1].map((o,j)=>`<button class="opt" data-i="${i}" data-j="${j}"><b>${L[j]}</b><span>${o}</span></button>`).join("")}<div class="exp" id="e${i}"></div></section>`).join("");
+function prog(){const n=ans.filter(a=>a>=0).length;$("cnt").textContent=n+" / "+Q.length+" answered";$("fill").style.width=(n/Q.length*100)+"%"}
+$("qs").onclick=e=>{const b=e.target.closest(".opt");if(!b||done)return;const i=+b.dataset.i,j=+b.dataset.j;ans[i]=ans[i]===j?-1:j;document.querySelectorAll("#q"+i+" .opt").forEach((o,k)=>o.classList.toggle("sel",ans[i]===k));prog()};
+function finish(){
+const pen=+$("pen").value;let c=0,w=0,b=0;
+Q.forEach((q,i)=>{const a=ans[i];if(a<0)b++;else if(a===q[2])c++;else w++;
+const sec=$("q"+i);sec.classList.add("review");
+sec.querySelectorAll(".opt").forEach((o,k)=>{o.disabled=true;o.classList.remove("sel");if(k===q[2])o.classList.add("ok");else if(k===a)o.classList.add("bad")});
+const t=a<0?'<span class="tag blank">Not answered (0)</span>':a===q[2]?'<span class="tag ok">Correct (+1)</span>':'<span class="tag bad">Wrong (−'+pen+')</span>';
+$("e"+i).innerHTML=t+" · Correct answer: <b>"+L[q[2]]+"</b>. "+q[3]});
+$("pen").disabled=true;done=true;
+const raw=c-w*pen,fin=Math.max(0,raw),f=x=>(Math.round(x*100)/100).toString();
+$("res").style.display="block";
+$("res").innerHTML=`<div class="big">${f(fin)} / 20</div><table><tr><td>Correct answers</td><td>${c} × +1 = +${c}</td></tr><tr><td>Wrong answers</td><td>${w} × −${pen} = −${f(w*pen)}</td></tr><tr><td>Not answered</td><td>${b} × 0 = 0</td></tr><tr><td>Raw total</td><td>${f(raw)}${raw<0?" (set to 0)":""}</td></tr></table><p class="note">Scroll down to review every question with its correct answer and explanation.</p>`;
+$("act").innerHTML='<button class="main" id="again">Retake exam</button><button class="main alt" id="top">Back to score</button>';
+$("again").onclick=()=>location.reload();$("top").onclick=()=>$("res").scrollIntoView({behavior:"smooth"});
+$("res").scrollIntoView({behavior:"smooth"})}
+$("sub").onclick=finish;
+prog();
+</script>
+</body>
+</html>
